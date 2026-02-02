@@ -1,0 +1,22 @@
+{
+    "SQL_Backups": {
+        "ruta": "\\\\192.168.150.48\\d\\Base_de _Datos_Diarios\\bd diarios\\192.168.150.10\\c$\\BackupSQL\\Tarde\\PRC_CN_A",
+        "prefijo": "PRC_CN_A_backup_",
+        "formato_fecha": "%Y_%m_%d"  
+    },
+    "Bumely": {
+        "ruta": "\\\\192.168.150.48\\d\\BUMELY",
+        "prefijo": "Bumely.4D",
+        "formato_fecha": "%Y-%m-%d"  
+    },
+    "VMware": {
+        "ruta": "\\\\192.168.150.48\\d\\Backup-VMWARE-RDPA-TAM",
+        "prefijo": "SRV-RDPA-TAM.6D",
+        "formato_fecha": "%Y-%m-%d"  
+    },
+    "Biometrico": {
+        "ruta": "\\\\192.168.150.48\\d\\VMWARE-BIOMETRICO",
+        "prefijo": "SRV-BIO-SIERA.10D",
+        "formato_fecha": "%Y-%m-%d"  
+    }
+}

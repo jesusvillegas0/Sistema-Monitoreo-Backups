@@ -1,0 +1,5 @@
+REPORTE DE Super Autos
+========================
+Vehículo: Toyota Corolla - Precio: 25000
+Vehículo: Ford F750 - Precio: 300000
+Vehículo: Chevrolet Toronto - Precio: 225000.0

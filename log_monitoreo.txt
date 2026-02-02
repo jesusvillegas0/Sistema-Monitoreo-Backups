@@ -1,0 +1,29 @@
+[2026-01-28 10:54:07] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:54:20] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:54:33] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:54:46] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:55:00] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:55:13] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:55:26] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:55:39] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:55:52] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:56:05] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:56:18] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:56:31] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:56:44] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:56:57] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:57:10] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:57:23] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:57:37] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:57:50] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 10:58:03] Servidor 192.168.150.97 está estable (0/3 fallos).
+[2026-01-28 11:19:23] Ciclo 1: ESTABLE - Caídas totales: 0
+[2026-01-28 11:19:35] Ciclo 2: ESTABLE - Caídas totales: 0
+[2026-01-28 11:19:46] Ciclo 3: ESTABLE - Caídas totales: 0
+[2026-01-28 11:19:58] Ciclo 4: ESTABLE - Caídas totales: 0
+[2026-01-28 11:20:10] Ciclo 5: ESTABLE - Caídas totales: 0
+[2026-01-28 11:20:21] Ciclo 6: ESTABLE - Caídas totales: 0
+[2026-01-28 11:20:33] Ciclo 7: ESTABLE - Caídas totales: 0
+[2026-01-28 11:20:44] Ciclo 8: ESTABLE - Caídas totales: 0
+[2026-01-28 11:20:56] Ciclo 9: ESTABLE - Caídas totales: 0
+[2026-01-28 11:21:07] Ciclo 10: ESTABLE - Caídas totales: 0
