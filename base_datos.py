@@ -1,0 +1,35 @@
+import sqlite3
+
+class BaseDatos:
+    def __init__(self, nombre_bd):
+        self.conexion = sqlite3.connect(nombre_bd)
+        self.cursor = self.conexion.cursor()
+        self.crear_tablas()
+    
+    def crear_tablas(self):
+        orden_sql = """
+        CREATE TABLE IF NOT EXISTS servidores(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nombre TEXT NOT NULL UNIQUE,
+        ruta TEXT NOT NULL,
+        prefijo TEXT NOT NULL)
+        """
+        self.cursor.execute(orden_sql)
+        self.conexion.commit()
+    
+    def insertar_servidor(self, nombre, ruta, prefijo):
+        orden_sql = "INSERT INTO servidores (nombre, ruta, prefijo) VALUES (?, ?, ?)"
+        self.cursor.execute(orden_sql, (nombre, ruta, prefijo))
+        self.conexion.commit()
+        print(f"Servidor '{nombre}' guardado en la BD.")
+
+    def consultar_servidores(self):
+        orden_sql = "SELECT * FROM servidores"
+        self.cursor.execute(orden_sql)
+        
+        servidores = self.cursor.fetchall()
+
+        for fila in servidores:
+            print(f"ID: {fila[0]} | Nombre: {fila[1]} | Ruta: {fila[2]}")
+        
+        return servidores
