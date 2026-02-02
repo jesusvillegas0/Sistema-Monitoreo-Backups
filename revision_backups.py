@@ -55,7 +55,15 @@ class GestorArchivos:
         except Exception as e:
             print(f"⚠️ Error al limpiar la carpeta: {e}")
 
+class GestorLogsAvanzado(GestorArchivos):
+    def escribir_log(self, mensaje):
+        super().escribir_log(mensaje)
+
+        print(f"🚀 [LOG AVANZADO]: {mensaje}")
+
+
 mi_gestor = GestorArchivos("Backups_Proxmox")
+mi_gestor1 = GestorLogsAvanzado("Backups_Proxmox")
 # EL BUCLE MAESTRO
 for nombre, info in servidores_db.items():
     # Extraemos los datos del diccionario interno
@@ -80,13 +88,14 @@ for nombre, info in servidores_db.items():
                 
                 print(f" ¡ÉXITO! Archivo: {archivo}")
                 print(f" Tamaño: {peso:.2f} MB")
-                mi_gestor.escribir_log(f"Fecha: {ayer_obj.strftime('%d/%m/%Y %H:%M:%S')} Server Revisado {nombre}, Backup: {archivo}, Tamaño: {peso:.2f} MB")
+                mi_gestor1.escribir_log(f"Fecha: {ayer_obj.strftime('%d/%m/%Y %H:%M:%S')} Server Revisado {nombre}, Backup: {archivo}, Tamaño: {peso:.2f} MB")
                 encontrado = True
                 mi_gestor.limpiar_archivos_viejos(ruta_remota, prefijo, dias=15)
                 break # Si ya lo encontramos, no hace falta seguir viendo esa carpeta
         
         if not encontrado:
             print(f" ALERTA: No se encontró ningún backup con prefijo {busqueda_final}")
+            mi_gestor1.escribir_log("Prueba")
             mi_alerta = Alerta()
             mi_alerta.lanzar_alerta(busqueda_final)
 
