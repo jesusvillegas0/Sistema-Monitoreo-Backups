@@ -1,9 +1,8 @@
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
 import json
-from plyer import notification
-import winsound 
-import requests, time
+from notificaciones import Alerta
+from redes import MonitorWeb
 
 ayer_obj = datetime.now() - timedelta(days=1)
 
@@ -23,35 +22,10 @@ class GestorArchivos:
         else:
             print(f"La carpeta '{self.carpeta}' ya existe.")
 
-    def lanzar_alerta(self, backup):
-        #. Sonido: Frecuencia 1000Hz, Duracion 500ms
-        winsound.Beep(500, 100)
-
-        # Notificacion Visual
-        notification.notify(
-                "ALERTA DE BACKUPS",
-                f"No se encontro el {backup}. Revisa!!!",
-                app_name="Monitor de Red",
-                timeout=5)
     def escribir_log(self, mensaje):
         ruta_archivo = os.path.join(self.carpeta, "reporte.txt")
         with open(ruta_archivo, "a", encoding="utf-8") as file:
             file.write(mensaje + "\n")
-
-    def chequear_web(self, url):
-        print(f"---- Chequeando pagina: {url}")
-        try:
-            respuesta = requests.get(url, timeout=15)
-            if respuesta.status_code == 200:
-                msg = f"La pagina {url} esta SALUDABLE"
-                print(msg)
-                mi_gestor.escribir_log(msg)
-            else:
-                msg = f"ALERTA: {url} respondio con codigo {respuesta.status_code}"
-                print(msg)
-                mi_gestor.lanzar_alerta(f"Web {url}")
-        except TimeoutError:
-            print("Error en monitoreo web")
 
     def limpiar_archivos_viejos(self, ruta_carpeta, prefijos, dias=15):
         ahora = time.time()
@@ -113,12 +87,14 @@ for nombre, info in servidores_db.items():
         
         if not encontrado:
             print(f" ALERTA: No se encontró ningún backup con prefijo {busqueda_final}")
-            mi_gestor.lanzar_alerta(busqueda_final)
+            mi_alerta = Alerta()
+            mi_alerta.lanzar_alerta(busqueda_final)
 
     except (FileNotFoundError, PermissionError) as e:
         # Si falla un servidor (por red o permisos), el script sigue con el siguiente
         print(f" ERROR DE ACCESO O RUTA. {e}")
     except OSError as e:
         print(f" ERROR DE ACCESO O RUTA. {e}")
-mi_gestor.chequear_web("https://procuracenter.com.ve/")
+monitor_web = MonitorWeb()
+monitor_web.chequear_web("https://procuracenter.com.ve/", mi_gestor)
 print("\n--- PROCESO FINALIZADO ---")
