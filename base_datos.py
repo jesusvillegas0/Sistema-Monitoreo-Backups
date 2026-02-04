@@ -29,10 +29,10 @@ class BaseDatos:
         self.cursor.execute(orden_sql)
         
         servidores = self.cursor.fetchall()
-
+        """
         for fila in servidores:
             print(f"ID: {fila[0]} | Nombre: {fila[1]} | Ruta: {fila[2]} | Formato: {fila[3]}")
-        
+        """
         return servidores
     
     def eliminar_datos(self):
