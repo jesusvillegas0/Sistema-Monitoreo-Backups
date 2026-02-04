@@ -122,5 +122,6 @@ for id, nombre, ruta, prefijo, formato in serviores_db:
         print(f" ERROR DE ACCESO O RUTA. {e}")
 monitor_web = MonitorWeb()
 monitor_web.chequear_web("https://procuracenter.com.ve/", mi_gestor)
+monitor_web.realizar_ping("192.168.150.20", mi_gestor)
 print("\n--- PROCESO FINALIZADO ---")
 

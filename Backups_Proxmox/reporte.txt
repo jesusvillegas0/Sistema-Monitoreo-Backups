@@ -33,3 +33,52 @@ Fecha: 03/02/2026 13:25:04 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T1
 Fecha: 03/02/2026 13:25:04 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
 Fecha: 03/02/2026 13:25:04 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
 La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 13:25:04
+Fecha: 03/02/2026 15:47:25 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 15:47:25 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 15:47:25 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 15:47:25 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+Fecha: 03/02/2026 15:48:22 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 15:48:22 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 15:48:22 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 15:48:22 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+Fecha: 03/02/2026 15:50:08 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 15:50:08 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 15:50:08 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 15:50:08 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+Fecha: 03/02/2026 15:51:34 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 15:51:34 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 15:51:34 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 15:51:34 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 15:51:34
+Fecha: 03/02/2026 16:01:23 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:01:23 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:01:23 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:01:23 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:01:23
+Fecha: 03/02/2026 16:07:28 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:07:28 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:07:28 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:07:28 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:07:28
+Fecha: 03/02/2026 16:07:51 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:07:51 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:07:51 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:07:51 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:07:51
+Fecha: 03/02/2026 16:12:11 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:12:11 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:12:11 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:12:11 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:12:11
+Fecha: 03/02/2026 16:12:28 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:12:28 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:12:28 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:12:28 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:12:28
+El servidor con la IP: 192.168.150.20 esta activo., 04-02-2026, 16:12:28
+Fecha: 03/02/2026 16:14:13 Server Revisado SQL_Backups, Backup: PRC_CN_A_backup_2026_02_03_190002_2518094.bak, Tamaño: 61.49 MB
+Fecha: 03/02/2026 16:14:13 Server Revisado Bumely, Backup: Bumely.4D2026-02-03T183008_AEDA.vib, Tamaño: 116.71 MB
+Fecha: 03/02/2026 16:14:13 Server Revisado VMware, Backup: SRV-RDPA-TAM.6D2026-02-03T180009_8CAE.vib, Tamaño: 2093.01 MB
+Fecha: 03/02/2026 16:14:13 Server Revisado Biometrico, Backup: SRV-BIO-SIERA.10D2026-02-03T190002_DBEF.vib, Tamaño: 231.21 MB
+La pagina https://procuracenter.com.ve/ esta SALUDABLE - 04-02-2026, 16:14:13
+El servidor con la IP: 192.168.150.98 no esta activo., 04-02-2026, 16:14:13
