@@ -29,10 +29,10 @@ class BaseDatos:
         self.cursor.execute(orden_sql)
         
         servidores = self.cursor.fetchall()
-        """
+        
         for fila in servidores:
             print(f"ID: {fila[0]} | Nombre: {fila[1]} | Ruta: {fila[2]} | Formato: {fila[3]}")
-        """
+        
         return servidores
     
     def eliminar_datos(self):
@@ -42,3 +42,23 @@ class BaseDatos:
         servidores = self.cursor.fetchall()
 
         print(servidores)
+
+    def agregar_servidor_interativo(self):
+        print("\n--- Agregar Nuevo servidor al Monitoreo ---")
+        nombre = input("Nombre del servidor: ")
+        ruta = input("Ruta de red (ej. \\\\192.168...): ")
+        prefijo = input("Prefijo del archivo: ")
+        formato = input("Formato de fecha (ej. %Y-%m-%d): ")
+
+        try:
+            self.insertar_servidor(nombre, ruta, prefijo, formato)
+            print("Servidor agregado con exito.")
+        except Exception as e:
+            print(f"Error al agregar: {e}")
+
+    def eliminar_servidor(self, id_servidor):
+        orden_sql = "DELETE FROM servidores WHERE id = ?"
+        self.cursor.execute(orden_sql, (id_servidor,))
+        self.conexion.commit()
+
+        print(f"Servidor con el {id_servidor} borrado con exito!!")
