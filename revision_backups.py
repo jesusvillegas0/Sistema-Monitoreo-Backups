@@ -68,8 +68,10 @@ class GestorLogsAvanzado(GestorArchivos):
 
         print(f"🚀 [LOG AVANZADO]: {mensaje}")
 
+RUTA_BASE = os.path.dirname(os.path.abspath(__file__))
 
-mi_gestor = GestorArchivos("Backups_Proxmox")
+
+mi_gestor = GestorArchivos(os.path.join(RUTA_BASE, "Backups_Proxmox"))
 mi_gestor1 = GestorLogsAvanzado("Backups_Proxmox")
 # EL BUCLE MAESTRO
 
@@ -102,14 +104,14 @@ for id, nombre, ruta, prefijo, formato in serviores_db:
                 
                 print(f" ¡ÉXITO! Archivo: {archivo}")
                 print(f" Tamaño: {peso:.2f} MB")
-                mi_gestor1.escribir_log(f"Fecha: {ayer_obj.strftime('%d/%m/%Y %H:%M:%S')} Server Revisado {nombre}, Backup: {archivo}, Tamaño: {peso:.2f} MB")
+                mi_gestor.escribir_log(f"Fecha: {ayer_obj.strftime('%d/%m/%Y %H:%M:%S')} Server Revisado {nombre}, Backup: {archivo}, Tamaño: {peso:.2f} MB")
                 encontrado = True
                 mi_gestor.limpiar_archivos_viejos(ruta, prefijo, dias=15)
                 break # Si ya lo encontramos, no hace falta seguir viendo esa carpeta
         
         if not encontrado:
             print(f" ALERTA: No se encontró ningún backup con prefijo {busqueda_final}")
-            mi_gestor1.escribir_log("Prueba")
+            mi_gestor.escribir_log("Prueba")
             mi_alerta = Alerta()
             mi_alerta.lanzar_alerta(busqueda_final)
 
