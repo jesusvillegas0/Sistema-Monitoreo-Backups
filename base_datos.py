@@ -31,7 +31,7 @@ class BaseDatos:
         servidores = self.cursor.fetchall()
         
         for fila in servidores:
-            print(f"ID: {fila[0]} | Nombre: {fila[1]} | Ruta: {fila[2]} | Formato: {fila[3]}")
+            print(f"ID: {fila[0]} | Nombre: {fila[1]} | Ruta: {fila[2]} | Prefijo: {fila[3]} | formato: {fila[4]}")
         
         return servidores
     
@@ -61,4 +61,11 @@ class BaseDatos:
         self.cursor.execute(orden_sql, (id_servidor,))
         self.conexion.commit()
 
-        print(f"Servidor con el {id_servidor} borrado con exito!!")
+        print(f"\nServidor con el {id_servidor} borrado con exito!!")
+
+    def actualizar_servidor(self, id_servidor, nombre, ruta, prefijo, formato):
+        orden_sql = "UPDATE servidores SET nombre = ?, ruta = ?, prefijo = ?, formato_fecha = ? WHERE id = ?"
+        self.cursor.execute(orden_sql, (nombre, ruta, prefijo, formato, id_servidor))
+        self.conexion.commit()
+
+        print(f"El servidor {nombre} fue actualizado con exito...")
