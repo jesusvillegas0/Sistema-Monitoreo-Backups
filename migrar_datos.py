@@ -9,10 +9,12 @@ db = BaseDatos("backups_sistema.db")
 for nombre, info in servidores_db.items():
     ruta = info["ruta"]
     prefijo = info["prefijo"]
+    formato = info["formato_fecha"]
 
-    db.insertar_servidor(nombre, ruta, prefijo)
+    db.insertar_servidor(nombre, ruta, prefijo, formato)
 
 db.consultar_servidores()
+#db.eliminar_datos()
 db.conexion.close()
 
 

@@ -1,15 +1,22 @@
 import os
-from datetime import datetime, timedelta, time
-import json
+from datetime import datetime, timedelta
+import time
+#import json
 from notificaciones import Alerta
 from redes import MonitorWeb
+from base_datos import BaseDatos
+
 
 ayer_obj = datetime.now() - timedelta(days=1)
 
 print(f"--- INICIANDO REVISIÓN DE BACKUPS (Fecha: {ayer_obj.strftime('%d/%m/%Y')}) ---")
 
-with open("servidores_backups.json", "r", encoding="utf-8") as archivo_config:
-    servidores_db = json.load(archivo_config)
+db = BaseDatos("backups_sistema.db")
+serviores_db = db.consultar_servidores()
+
+
+#with open("servidores_backups.json", "r", encoding="utf-8") as archivo_config:
+#    servidores_db = json.load(archivo_config)
 
 class GestorArchivos:
     def __init__(self, nombre_carpeta):
@@ -65,6 +72,8 @@ class GestorLogsAvanzado(GestorArchivos):
 mi_gestor = GestorArchivos("Backups_Proxmox")
 mi_gestor1 = GestorLogsAvanzado("Backups_Proxmox")
 # EL BUCLE MAESTRO
+
+"""
 for nombre, info in servidores_db.items():
     # Extraemos los datos del diccionario interno
     ruta_remota = info["ruta"]
@@ -73,24 +82,29 @@ for nombre, info in servidores_db.items():
 
     fecha_formateada = ayer_obj.strftime(formato)
     busqueda_final = f"{prefijo}{fecha_formateada}"
+"""
+for id, nombre, ruta, prefijo, formato in serviores_db:
     
+    fecha_formateada = ayer_obj.strftime(formato)
+    busqueda_final = f"{prefijo}{fecha_formateada}"
+
     print(f"\nRevisando {nombre}...")
 
     try:
         # Listamos los archivos de esta ruta específica
-        archivos = os.listdir(ruta_remota)
+        archivos = os.listdir(ruta)
         encontrado = False
 
         for archivo in archivos:
             if archivo.startswith(busqueda_final):
-                ruta_completa = os.path.join(ruta_remota, archivo)
+                ruta_completa = os.path.join(ruta, archivo)
                 peso = os.path.getsize(ruta_completa) / (1024**2)
                 
                 print(f" ¡ÉXITO! Archivo: {archivo}")
                 print(f" Tamaño: {peso:.2f} MB")
                 mi_gestor1.escribir_log(f"Fecha: {ayer_obj.strftime('%d/%m/%Y %H:%M:%S')} Server Revisado {nombre}, Backup: {archivo}, Tamaño: {peso:.2f} MB")
                 encontrado = True
-                mi_gestor.limpiar_archivos_viejos(ruta_remota, prefijo, dias=15)
+                mi_gestor.limpiar_archivos_viejos(ruta, prefijo, dias=15)
                 break # Si ya lo encontramos, no hace falta seguir viendo esa carpeta
         
         if not encontrado:
@@ -107,3 +121,4 @@ for nombre, info in servidores_db.items():
 monitor_web = MonitorWeb()
 monitor_web.chequear_web("https://procuracenter.com.ve/", mi_gestor)
 print("\n--- PROCESO FINALIZADO ---")
+
